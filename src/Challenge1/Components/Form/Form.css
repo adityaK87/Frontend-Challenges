@@ -1,0 +1,46 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Css for the Form  */
+.userForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    margin: 12px 10px;
+}
+
+/* Css for the name block */
+.name,
+.email,
+.password {
+    border-bottom: 1px solid black;
+}
+
+.userName,
+.userEmail,
+.userPassword {
+    border: none;
+    margin-left: 10px;
+}
+
+/* Css for the Email container */
+.userEmail {
+    margin: 0px 38px;
+
+}
+.userName{
+    margin:  0px 34px;
+}
+
+.email {}
+
+
+/* css for SignUp button  */
+.submit {
+    align-self: center;
+}
