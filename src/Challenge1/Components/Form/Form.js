@@ -3,24 +3,33 @@ import './Form.css';
 import logo from '../../../Challenge1/logo192.png';
 
 const Form = () => {
+    const createdAccount = () => {
+        window.alert("Account Created Sucessfully")
+
+    }
 
     return (
         <div className='formContainer'>
             <img className='logo' src={logo} alt="logo" width='50px'></img>
+            <span className="signUp"> Sign Up</span>
+
             <form action='' className='userForm'>
-                <label id='userName'>
-                    <div className='form name'> Name : <input className='userName' type="text" required /></div>
+                <label id='name'>
+                    <div className='form name'> NAME</div>
+                    <input className='name-input' type="text" placeholder='Aditya pal' required />
                 </label>
 
-                <label id="userEmail">
-                    <div className='form email'> Email : <input className='userEmail' type="email" required /></div>
+                <label id="userName">
+                    <div className='form userName'> USERNAME </div>
+                     <input className='userName-input' type="text" placeholder='Adityapal87' required />
                 </label>
 
-                <label id='userPassword'>
-                    <div className='form password'> Password : <input className='userPassword' type="password" required /></div>
+                <label id='userEmail'>
+                    <div className='form email'> EMAIL </div>
+                    <input className='userEmail-input' type="email" placeholder='aditya@gmail.com' required />
                 </label>
 
-                <div className='form submit'><input className='signUp' type="Submit" value="Sign Up" onChange={(e) => (e.prevent.default())} /></div>
+                <div className='form account'><input className='createAccount' type="Submit" value="CREATE ACCOUNT" onClick={() => createdAccount()} /></div>
 
             </form>
         </div>

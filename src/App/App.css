@@ -1,11 +1,11 @@
 .index{
-  margin-top: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.App{
-  width: 100%;
-  height: 100%;
+
+body{
+  height: 100vh;
+  background: linear-gradient(#d9daed 30% ,#d7b3b8 70%);
 }
