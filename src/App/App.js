@@ -1,7 +1,7 @@
 import React from 'react';
-// import Fetch from '../Components/Api/Fetch';
 import './App.css';
 import Index from '../Challenge1/Components/Index'
+// import MovieApp from '../Challenge2{ Movie-App}/Index';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <div className='index'>
         <Index />
       </div>
-
+      {/* <MovieApp /> */}
     </div>
   );
 }
