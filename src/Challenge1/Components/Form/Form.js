@@ -1,6 +1,6 @@
 import React from 'react';
 import './Form.css';
-import logo from '../../../Challenge1/logo192.png';
+import logo from '../../../Challenge1/appleLogo.png';
 
 const Form = () => {
     const createdAccount = () => {
@@ -10,7 +10,7 @@ const Form = () => {
 
     return (
         <div className='formContainer'>
-            <img className='logo' src={logo} alt="logo" width='50px'></img>
+            <img className='logo' src={logo} alt="logo" width='70px'></img>
             <span className="signUp"> Sign Up</span>
 
             <form action='' className='userForm'>
