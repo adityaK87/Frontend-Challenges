@@ -26,14 +26,14 @@ const MovieApp = () => {
             <div className='details'>
                 <img className='poster' alt='poster' src={img} />
                 <div className='movie-details'>
-                    <h2 className='movie-name'>Movie Name</h2>
-                    <span className='rating'>9.0</span>
-                    <div className='year-details'>
+                    <h2 className=' details-movie display-movie-name'>Movie Name</h2>
+                    <span className='details-movie rating'> ⭐9.0</span>
+                    <div className=' details-movie year-details'>
                         <span className=''> PG-13 </span>
                         <span> 2008 </span>
                         <span> 152 min </span>
                     </div>
-                    <div className='genre-details'>
+                    <div className=' details-movie genre-details'>
                         <span className='genre genre1'> Drama </span>
                         <span className='genre genre2'> Action </span>
                         <span className='genre genre3'> Thriller </span>
@@ -41,7 +41,7 @@ const MovieApp = () => {
                 </div>
             </div>
 
-            <div className='caste'>
+            <div className='cast'>
                 <h3 >Plot :</h3>
                 <p className='plot'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic architecto aut quasi, laboriosam, facere quidem debitis ex
                     culpa dolore impedit fuga! Saepe non, nostrum cumque, quia aliquid, recusandae iure esse quisquam autem modi nulla?</p>
@@ -54,3 +54,5 @@ const MovieApp = () => {
 }
 
 export default MovieApp; 
+
+
