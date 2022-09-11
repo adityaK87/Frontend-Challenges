@@ -29,9 +29,9 @@ const MovieApp = () => {
                     <h2 className=' details-movie display-movie-name'>Movie Name</h2>
                     <span className='details-movie rating'> ⭐9.0 </span>
                     <div className=' details-movie year-details'>
-                        <span className=''> PG-13 </span>
-                        <span> 2008 </span>
-                        <span> 152 min </span>
+                        <span className='detail-section'> PG-13 </span>
+                        <span className='detail-section'> 152 min </span>
+                        <span className='detail-section'> 2008 </span>
                     </div>
                     <div className=' details-movie genre-details'>
                         <span className='genre genre1'> Drama </span>
@@ -53,6 +53,6 @@ const MovieApp = () => {
     )
 }
 
-export default MovieApp; 
+export default MovieApp;
 
 
