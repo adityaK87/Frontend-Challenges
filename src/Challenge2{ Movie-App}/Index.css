@@ -41,10 +41,14 @@ button {
 
 .search-movie>button {
     background: #dfbe00;
+
 }
 
 .search-movie>button:hover {
     cursor: pointer;
+    color: #dfbe00;
+    background: none  ;
+    border: 1px solid #a0a0a0;
 }
 
 .details {

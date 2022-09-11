@@ -19,7 +19,7 @@ const MovieApp = () => {
     return (
         <div className='movie-container'>
             <div className='search-movie'>
-                <input className='movie-name' id='Movie-Name' placeholder='Enter Movie Name here... ' value="dark knight"></input>
+                <input className='movie-name' id='Movie-Name' placeholder='Enter Movie Name here...' ></input>
                 <button className='search-btn'>Search</button>
             </div>
 
@@ -27,7 +27,7 @@ const MovieApp = () => {
                 <img className='poster' alt='poster' src={img} />
                 <div className='movie-details'>
                     <h2 className=' details-movie display-movie-name'>Movie Name</h2>
-                    <span className='details-movie rating'> ⭐9.0</span>
+                    <span className='details-movie rating'> ⭐9.0 </span>
                     <div className=' details-movie year-details'>
                         <span className=''> PG-13 </span>
                         <span> 2008 </span>
