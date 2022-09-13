@@ -108,3 +108,37 @@ button {
     font-size: 12px;
     padding: 5px 0px;
 }
+
+
+@media only screen and (max-width:439px) {
+    .movie-container {
+        min-height: 70vh;
+        width: 60vh;
+    }
+
+    .search-movie>input,
+    button {
+        padding: 10px;
+    }
+
+    .poster {
+        width: 128px;
+        height: 173px;
+    }
+}
+
+
+@media only screen and (max-width:360px){
+    .movie-container {
+        min-height: 70vh;
+        width: 50vh;
+    }
+
+    .search-movie>input,
+    button {
+        padding: 4px;
+    }
+    .genre{
+        font-size: 6px;
+    }
+}
