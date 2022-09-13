@@ -13,7 +13,9 @@
   height: 100vh;
   background: linear-gradient(#000 50% ,#dfbe00 50%);
 } */
+
 body{
-  height: 100vh;
+  width:100%;
+  height: 100%;
   background: #f1da56d4;
 }
