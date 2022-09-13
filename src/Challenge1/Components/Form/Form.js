@@ -11,17 +11,17 @@ const Form = () => {
     return (
         <div className='formContainer'>
             <img className='logo' src={logo} alt="logo" width='70px'></img>
-            <span className="signUp"> Sign Up</span>
+            <span className="signUp"> Sign Up </span>
 
             <form action='' className='userForm'>
                 <label id='name'>
-                    <div className='form name'> NAME</div>
+                    <div className='form name'> NAME </div>
                     <input className='name-input' type="text" placeholder='Aditya pal' required />
                 </label>
 
                 <label id="userName">
                     <div className='form userName'> USERNAME </div>
-                     <input className='userName-input' type="text" placeholder='Adityapal87' required />
+                    <input className='userName-input' type="text" placeholder='Adityapal87' required />
                 </label>
 
                 <label id='userEmail'>
