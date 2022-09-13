@@ -1,3 +1,9 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 .social-media-container {
     width: 40vh;
     height: 60vh;
@@ -5,7 +11,8 @@
     color: #7c7b7b;
     position: absolute;
     z-index: 1;
-    top: 25%;
+    top: 20%;
+    left: 40%;
     /* box-sizing: border-box; */
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.25);
     /* box-shadow: -8px -8px 10px rgba(0, 0, 0, 0.25); */
@@ -13,16 +20,23 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-evenly;
 }
 
+.logo {
+    width: 8rem;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+}
 
 
 .profile {
     align-self: center;
 }
 
-.userName {
+.username {
     font-size: 13px;
+    margin-left: 10px;
 }
 
 .social-media-handles {
@@ -56,13 +70,25 @@
 }
 
 .btn {
-    box-shadow: 5px 5px 5px rgba(0, 93, 243 ,0.4);
     text-align: center;
+    box-shadow: 5px 5px 5px rgba(0, 93, 243, 0.4);
+    margin: 0px 0px -17px 0px;
+    padding: 17px 114px;
+    background: #4e8df2;
+    cursor: pointer;
 }
-.btn >button{
+
+.btn>button {
     border: none;
     color: #fff;
+    background:#4e8df2 ;
     font-weight: 600;
-    background-color: rgb(0 93 243);
-    /* box-shadow: 5px 5px 5px rgba(0 ,93, 243, 0.7); */
+    /* box-shadow: 2px 2px 2px rgb(0, 93 ,243,  0.7); */
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1000px) {
+    .btn{
+        background: red;
+    }
 }
