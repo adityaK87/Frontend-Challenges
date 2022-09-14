@@ -1,6 +1,6 @@
 import React from 'react';
 import './Form.css';
-import logo from '../../../Challenge1/appleLogo.png';
+import logo from '../../../Challenge1Form/appleLogo.png';
 
 const Form = () => {
     const createdAccount = () => {

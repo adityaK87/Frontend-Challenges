@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Index.css";
-import logo from '../Challenge1/appleLogo.png';
+import logo from '../Challenge1Form/appleLogo.png';
 import linkedin from '../assets/li.png';
 
 const SocialMediaCard = () => {

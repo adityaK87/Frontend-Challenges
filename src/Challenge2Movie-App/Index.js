@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './Index.css';
-import img from '../Challenge1/logo192.png'
+import img from '../Challenge1Form/logo192.png';
 
 const MovieApp = () => {
     const movieName = document.getElementById("Movie-Name");

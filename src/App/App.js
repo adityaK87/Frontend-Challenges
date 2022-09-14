@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Index from '../Challenge1/Components/Index'
-import MovieApp from '../Challenge2{ Movie-App}/Index';
-import SocialMediaCard from '../Challenge3/Index';
+import Index from '../Challenge1Form/Components/Index'
+import MovieApp from '../Challenge2Movie-App/Index';
+import SocialMediaCard from '../Challenge3SocialMediaCard/Index';
 
 function App() {
   return (
