@@ -1,0 +1,66 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.time-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.watch-container {
+    display: flex;
+    margin-top: 2rem;
+    background: #0c1833;
+    padding: 34px 75px;
+    border-radius: 16px;
+    box-shadow: 10px 10px 7px rgba(24, 48, 100, 0.5);
+}
+
+.digital-watch {
+    font-size: 3rem;
+    color: rgb(30, 29, 29);
+    font-family: cursive;
+}
+
+.time {
+    color: #fff;
+    background: rgb(24, 48, 100);
+    /* background: #111827; */
+    font-size: 4rem;
+    border-radius: 6px;
+    box-shadow: -8px -8px 6px  rgba(24, 48, 100, 0.5);
+    padding: 2px 20px;
+
+}
+
+.dot {
+    font-size: 4rem;
+    color: #fff;
+}
+
+.ampm {
+    color: #fff;
+    font-weight: 700;
+    align-self: end;
+    font-family: cursive;
+}
+
+@media only screen and (max-width:560px) {
+    .watch-container {
+        padding: 24px 25px;
+    }
+
+    .time {
+        font-size: 3rem;
+        padding: 9px 10px;
+    }
+    .dot {
+        font-size: 3rem;
+    }
+
+}
