@@ -51,11 +51,11 @@ button {
     border: 1px solid #a0a0a0;
 }
 
-/* 
+
 .poster {
-    max-width: 12vh;
-    min-height: 15vh;
-} */
+    width: 22vh;
+    height: 30vh;
+}
 
 
 .details {
@@ -128,7 +128,7 @@ button {
 }
 
 
-@media only screen and (max-width:360px){
+@media only screen and (max-width:360px) {
     .movie-container {
         min-height: 70vh;
         width: 50vh;
@@ -138,7 +138,8 @@ button {
     button {
         padding: 4px;
     }
-    .genre{
+
+    .genre {
         font-size: 6px;
     }
 }

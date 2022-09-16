@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 // import Index from '../Challenge1Form/Components/Index'
-// import MovieApp from '../Challenge2Movie-App/Index';
+import MovieApp from '../Challenge2Movie-App/Index';
 // import SocialMediaCard from '../Challenge3SocialMediaCard/Index';
 import DisplayTime from '../Challenge4DigitalWatch/Index';
 
@@ -11,10 +11,10 @@ function App() {
       <div className='index'>
         {/* <Index /> */}
       </div>
-      {/* <MovieApp /> */}
+      <MovieApp />
       {/* <SocialMediaCard/> */}
 
-        <DisplayTime />
+        {/* <DisplayTime /> */}
     </div>
   );
 }

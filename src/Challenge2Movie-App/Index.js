@@ -1,20 +1,30 @@
-import React, { useState } from 'react';
-import axios from 'axios';
+import React ,{useState,useEffect} from 'react';
+// import axios from 'axios';
 import './Index.css';
 import img from '../Challenge1Form/logo192.png';
 
 const MovieApp = () => {
-    const movieName = document.getElementById("Movie-Name");
+    const movieName = "vikram";
 
     // const [movieName, setMovieName] = useState(" ");
     const baseUrl = `http://www.omdbapi.com/?t=${movieName}&apikey=581e9311`;
-    try {
+    console.log(baseUrl);
+    // try {
 
-        axios.get(baseUrl).then((data) => console.log(data))
+    //    axios.get(baseUrl).then((data) => console.log(data.title));
 
-    } catch (error) {
-        console.log(error)
-    }
+    // } catch (error) {
+    //     console.log(error);
+    // }
+
+    const [poster, setPoster] = useState(null);
+    useEffect(() => {
+        const a = fetch(baseUrl)
+        // console.log(a) 
+            .then((resp) => resp.json())
+            .then((data) => setPoster(data.Poster));
+    }, []);
+
 
     return (
         <div className='movie-container'>
@@ -24,9 +34,9 @@ const MovieApp = () => {
             </div>
 
             <div className='details'>
-                <img className='poster' alt='poster' src={img} />
+                <img className='poster' alt='poster' src={poster} />
                 <div className='movie-details'>
-                    <h2 className=' details-movie display-movie-name'>Movie Name</h2>
+                    <h2 className=' details-movie display-movie-name'>Vikram</h2>
                     <span className='details-movie rating'> ⭐9.0 </span>
                     <div className=' details-movie year-details'>
                         <span className='detail-section'> PG-13 </span>
