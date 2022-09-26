@@ -23,9 +23,9 @@ function DisplayTime() {
     seconds = (seconds < 10) ? "0" + seconds : seconds;
 
     let update = () => {
-        setTime(new Date())
+        setTime(new Date());
     }
-    setInterval(update, 1000)
+    setInterval(update, 1000);
 
 
     // This watch can be made by using =>new Date().toLocaleTimeString()

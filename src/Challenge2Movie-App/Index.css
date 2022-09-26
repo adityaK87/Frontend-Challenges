@@ -4,7 +4,7 @@
 }
 
 .movie-container {
-    height: 80vh;
+    height: 87vh;
     width: 70vh;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -59,8 +59,9 @@ button {
 
 
 .details {
-    display: grid;
-    grid-template-columns: 3fr 5fr;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .movie-details {

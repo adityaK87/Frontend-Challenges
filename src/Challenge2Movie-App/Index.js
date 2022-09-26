@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 // import axios from 'axios';
 import './Index.css';
-import img from '../Challenge1Form/logo192.png';
 
 const MovieApp = () => {
     // const movieName = "";
-
+    
     const [movieName, setMovieName] = useState(" ");
     const [poster, setPoster] = useState(null);
     const [title, setTitle] = useState("");
@@ -16,9 +15,10 @@ const MovieApp = () => {
     const [plot, setPlot] = useState("");
     const [actors, setActors] = useState("");
     const [genre, setGenre] = useState("");
+    
+    const apikey ="581e9311";
+    const baseUrl = `http://www.omdbapi.com/?t=${movieName}&apikey=${apikey}`;
 
-
-    const baseUrl = `http://www.omdbapi.com/?t=${movieName}&apikey=581e9311`;
 
 
     // useEffect(() => {
@@ -38,7 +38,7 @@ const MovieApp = () => {
     } else {
         try {
             // axios.get(baseUrl).then((data) => console.log(data.title));
-            const a = fetch(baseUrl)
+            fetch(baseUrl)
                 .then((resp) => resp.json())
                 .then((data) => {
                     console.log(data)
@@ -79,22 +79,21 @@ const MovieApp = () => {
                         {/* <span className='genre genre1'> Drama </span>
                         <span className='genre genre2'> Action </span>
                         <span className='genre genre3'> Thriller </span> */}
-                        <span className='genre genre3'>{data.genre.split(",").join()} </span>
+                        {/* <span className='genre genre3'>{data.genre.split(",").join()} </span> */}
                     </div>
+                </div>
+                <div className='cast'>
+                    <h3 >Plot :</h3>
+                    <p className='plot'>{plot}</p>
+                    <h3 >Cast :</h3>
+                    <p className="caste">{actors}</p>
+
                 </div>
             </div>
 
-            <div className='cast'>
-                <h3 >Plot :</h3>
-                <p className='plot'>{plot}</p>
-                <h3 >Cast :</h3>
-                <p className="caste">{actors}</p>
-            </div>
 
         </div>
     )
 }
 
 export default MovieApp;
-
-
