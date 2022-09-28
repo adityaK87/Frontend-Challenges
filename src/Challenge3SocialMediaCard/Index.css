@@ -5,28 +5,21 @@
 }
 
 .social-media-container {
-    width: 40vh;
-    height: 60vh;
-    background: #ffffff;
-    color: #7c7b7b;
-    position: absolute;
-    z-index: 1;
-    top: 20%;
-    left: 40%;
-    /* box-sizing: border-box; */
-    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.25);
-    /* box-shadow: -8px -8px 10px rgba(0, 0, 0, 0.25); */
+    background: #fff;
+    margin: 10% auto;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    width: fit-content;
     align-items: center;
-    justify-content: space-evenly;
+    color: #7c7b7b;
+    box-shadow: 7px 7px 10px rgb(0, 0, 0, 0.2);
+    flex-wrap: wrap;
 }
 
 .logo {
     width: 8rem;
     -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
+    clip-path: circle(46% at 51% 54%);
 }
 
 
@@ -40,17 +33,18 @@
 }
 
 .social-media-handles {
-    padding: 5px 5px;
+    padding: 12px 0px;
 }
 
 .twitter,
 .linkedIn,
 .github {
-    padding: 5px 10px;
+    padding: 0px 10px;
 }
 
 .details {
     display: flex;
+    flex-direction: row;
     text-align: center;
 }
 
@@ -71,24 +65,25 @@
 
 .btn {
     text-align: center;
-    box-shadow: 5px 5px 5px rgba(0, 93, 243, 0.4);
-    margin: 0px 0px -17px 0px;
-    padding: 17px 114px;
+    box-shadow: 5px 5px 5px rgb(0 93 243 / 40%);
+    /* margin: 0px 0px -17px 0px; */
+    /* padding: 17px 114px; */
     background: #4e8df2;
     cursor: pointer;
+    align-self: stretch
 }
 
 .btn>button {
     border: none;
     color: #fff;
-    background:#4e8df2 ;
+    background: #4e8df2;
     font-weight: 600;
-    /* box-shadow: 2px 2px 2px rgb(0, 93 ,243,  0.7); */
+    /* box-shadow: 2px 2px 2px rgb(0 93 243 / 70%); */
     cursor: pointer;
 }
 
 @media only screen and (max-width:1000px) {
-    .btn{
-        background: red;
+    .btn {
+        /* background: red; */
     }
 }
