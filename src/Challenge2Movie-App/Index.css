@@ -1,146 +1,144 @@
 * {
-    padding: 0px 0px;
-    margin: 0px 0px;
+  padding: 0px 0px;
+  margin: 0px 0px;
 }
 
 .movie-container {
-    height: 87vh;
-    width: 70vh;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50vh;
-    left: 50%;
-    background: #201f28;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #fff;
-    justify-content: space-evenly;
+  height: fit-content;
+  width: 70vh;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50vh;
+  left: 50%;
+  background: #201f28;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  justify-content: space-evenly;
+  padding: 12px 13px;
 }
 
-
-.search-movie>input,
+.search-movie > input,
 button {
-    padding: 8px 38px;
-    font-size: 13px;
-    margin: 0px 16px;
-    border-radius: 4px;
-    background: none;
-    outline: none;
-    border: none;
-
+  padding: 8px 38px;
+  font-size: 13px;
+  margin: 0px 16px;
+  border-radius: 4px;
+  background: none;
+  outline: none;
+  border: none;
 }
 
-.search-movie>input {
-    border: 1px solid #a0a0a0;
-    color: #f9f2f2;
-    font-weight: 500;
-
+.search-movie > input {
+  background-color: transparent;
+  border: 1px solid #a0a0a0;
+  color: #f9f2f2;
+  font-weight: 500;
 }
 
-.search-movie>button {
-    background: #dfbe00;
-
+.search-movie > button {
+  background: #dfbe00;
 }
 
-.search-movie>button:hover {
-    cursor: pointer;
-    color: #dfbe00;
-    background: none;
-    border: 1px solid #a0a0a0;
+.search-movie > button:hover {
+  cursor: pointer;
+  color: #dfbe00;
+  background: none;
+  border: 1px solid #a0a0a0;
 }
-
 
 .poster {
-    width: 22vh;
-    height: 30vh;
+  width: 22vh;
+  height: 30vh;
 }
 
-
 .details {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .movie-details {
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+  margin: 14px 0px;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.movie-display-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .details-movie {
-    margin: 7px 0px;
+  margin: 7px 0px;
 }
 
 .rating {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .year-details {
-    color: #a0a0a0;
-    font-size: 12px;
+  color: #a0a0a0;
+  font-size: 12px;
 }
 
 .detail-section {
-    padding: 0px 4px;
+  padding: 0px 4px;
 }
 
 .genre {
-    border: 1px solid #d3cfcf;
-    color: #a0a0a0;
-    border-radius: 4px;
-    font-weight: 500;
-    margin: 0px 6px;
-    padding: 6px 10px;
-    outline: none;
-    font-size: 12px;
+  border: 1px solid #d3cfcf;
+  color: #a0a0a0;
+  border-radius: 4px;
+  font-weight: 500;
+  margin: 0px 6px;
+  padding: 6px 10px;
+  outline: none;
+  font-size: 12px;
 }
 
 .cast {
-    padding: 8px 38px;
+  padding: 8px 38px;
 }
 
-.cast>p {
-    color: #a0a0a0;
-    font-size: 12px;
-    padding: 5px 0px;
+.cast > p {
+  color: #a0a0a0;
+  font-size: 12px;
+  padding: 5px 0px;
 }
 
+@media only screen and (max-width: 439px) {
+  .movie-container {
+    min-height: 70vh;
+    width: 60vh;
+  }
 
-@media only screen and (max-width:439px) {
-    .movie-container {
-        min-height: 70vh;
-        width: 60vh;
-    }
+  .search-movie > input,
+  button {
+    padding: 10px;
+  }
 
-    .search-movie>input,
-    button {
-        padding: 10px;
-    }
-
-    .poster {
-        width: 128px;
-        height: 173px;
-    }
+  .poster {
+    width: 128px;
+    height: 173px;
+  }
 }
 
+@media only screen and (max-width: 360px) {
+  .movie-container {
+    min-height: 70vh;
+    width: 50vh;
+  }
 
-@media only screen and (max-width:360px) {
-    .movie-container {
-        min-height: 70vh;
-        width: 50vh;
-    }
+  .search-movie > input,
+  button {
+    padding: 4px;
+  }
 
-    .search-movie>input,
-    button {
-        padding: 4px;
-    }
-
-    .genre {
-        font-size: 6px;
-    }
+  .genre {
+    font-size: 6px;
+  }
 }
